@@ -65,6 +65,7 @@
     <div class="encabezado">
       <img src="randy.jpeg" alt="Randy" width="300">
       <img src="randy1.jpeg" alt="Randy 1" width="300">
+      <p><a href="#inicio">← Volver al inicio</a></p>
     </div>
   </div>
 

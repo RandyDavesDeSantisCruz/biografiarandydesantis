@@ -1,36 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Randy De Santis</title>
   <style>
-body {font-family: Arial; margin:20px}
-.encabezado {background: #2196f3; color: white ; padding  :20px; text-align: center; }
-.menu { background: #333; color: white ; padding  :20px; }
-.contenido { display: flex; gap: 10px; margin-top: 10 px;}
-.principal { background: #DDEEFF; padding: 30px; width: 70%; }
-.lateral { background: #DDF5DD; padding: 30px; width: 30%; }
-.pie { background: #555; color: white ; padding: 15px; text-align: center; margin-top: 10px; }
-
+    * { box-sizing: border-box; }
+    body { font-family: Arial; margin: 20px; }
+    .encabezado { background: #2196f3; color: white; padding: 20px; text-align: center; }
+    .encabezado h1 { margin: 0; }
+    .menu { background: #333; color: white; padding: 20px; }
+    .menu a { color: white; text-decoration: none; padding: 0 8px; }
+    .menu a:hover { color: #2196f3; text-decoration: underline; }
+    .contenido { display: flex; gap: 10px; margin-top: 10px; }
+    .principal { background: #DDEEFF; padding: 30px; width: 70%; }
+    .lateral { background: #DDF5DD; padding: 30px; width: 30%; }
+    .detalle { background: #DDEEFF; padding: 30px; margin-top: 10px; }
+    .detalle a { color: #1565c0; }
+    .pie { background: #555; color: white; padding: 15px; text-align: center; margin-top: 10px; }
   </style>
 </head>
+
 <body>
-  <div class="encabezado">
-    <h1> Randy De Santis </h1>
-  </div>
-  <div class="menu">
-    Biografía | Fotos | Música | Video
-  </div>
-  <div class="contenido">
-    <div class="principal">
-      <h2> Contenido Principal </h2>
-      <p>
-        Datos principales
-      </p>
+
+  <!-- PÁGINA DE INICIO -->
+  <div id="inicio" class="pagina">
+    <div class="encabezado">
+      <h1>Randy De Santis</h1>
     </div>
-    <div class="lateral">
-      <h2> Contenido Lateral </h2>
-      <p>
-        Noticias y enlaces adicionales
+    <div class="menu">
+      <a href="#biografia" target="_blank" rel="noopener">Biografía</a> |
+      <a href="#fotos" target="_blank" rel="noopener">Fotos</a> |
+      <a href="#musica" target="_blank" rel="noopener">Música</a> |
+      <a href="#video" target="_blank" rel="noopener">Video</a>
+    </div>
+    <div class="contenido">
+      <div class="principal">
+        <h2>Contenido Principal</h2>
+        <p>Datos principales</p>
+      </div>
+      <div class="lateral">
+        <h2>Contenido Lateral</h2>
+        <p>Noticias y enlaces adicionales</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- BIOGRAFÍA -->
+  <div id="biografia" class="pagina" hidden>
+    <div class="encabezado">
+      <h1>Biografía</h1>
+    </div>
+    <div class="detalle">
+      <h2>Randy De Santis</h2>
+      <p>Aquí va la biografía: lugar y fecha de nacimiento, trayectoria, logros y datos importantes.</p>
+      <p><a href="#inicio">← Volver al inicio</a></p>
+    </div>
+  </div>
+
+  <!-- FOTOS -->
+  <div id="fotos" class="pagina" hidden>
+    <div class="encabezado">
+      <h1>Fotos</h1>
+    </div>
+    <div class="detalle">
+      <h2>Galería de fotos</h2>
+      <p>Aquí irán las fotografías.</p>
+      <p><a href="#inicio">← Volver al inicio</a></p>
+    </div>
+  </div>
+
+  <!-- MÚSICA -->
+  <div id="musica" class="pagina" hidden>
+    <div class="encabezado">
+      <h1>Música</h1>
+    </div>
+    <div class="detalle">
+      <h2>Discografía y canciones</h2>
+      <p>Aquí irá la lista de canciones o álbumes.</p>
+      <p><a href="#inicio">← Volver al inicio</a></p>
+    </div>
+  </div>
+
+  <!-- VIDEO -->
+  <div id="video" class="pagina" hidden>
+    <div class="encabezado">
+      <h1>Video</h1>
+    </div>
+    <div class="detalle">
+      <h2>Videos</h2>
+      <p>Aquí irán los videos.</p>
+      <p><a href="#inicio">← Volver al inicio</a></p>
+    </div>
+  </div>
+
+  <!-- PIE (se ve en todas las páginas) -->
+  <div class="pie">
+    © 2026 Randy De Santis - Todos los derechos reservados
+  </div>
+
+  <script>
+    // Muestra solo la página que indica la dirección (#biografia, #fotos, etc.)
+    function mostrar() {
+      var id = location.hash.slice(1) || "inicio";
+      var paginas = document.querySelectorAll(".pagina");
+      var existe = false;
+      paginas.forEach(function (p) {
+        p.hidden = (p.id !== id);
+        if (p.id === id) existe = true;
+      });
+      if (!existe) document.getElementById("inicio").hidden = false;
+    }
+    window.addEventListener("hashchange", mostrar);
+    mostrar();
+  </script>
+
+</body>
+
+</html>
       </p>
     </div>
   </div>

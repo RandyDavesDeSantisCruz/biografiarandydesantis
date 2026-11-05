@@ -61,8 +61,11 @@
   </div>
 
   <!-- FOTOS -->
-  <img src="randy.jpeg" alt="Randy" width="300">
-  <img src="randy1.jpeg" alt="Randy 1" width="300">
+  <div id="fotos" class="pagina" hidden>
+    <div class="encabezado">
+      <img src="randy.jpeg" alt="Randy" width="300">
+      <img src="randy1.jpeg" alt="Randy 1" width="300">
+    </div>
   </div>
 
   <!-- MÚSICA -->

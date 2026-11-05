@@ -69,14 +69,15 @@
     </div>
   </div>
 
-  <!-- MÚSICA -->
+<!-- MÚSICA -->
   <div id="musica" class="pagina" hidden>
     <div class="encabezado">
       <h1>Música</h1>
     </div>
     <div class="detalle">
       <h2>Discografía y canciones</h2>
-      <p>Aquí irá la lista de canciones o álbumes.</p>
+      <p>Nombre de la canción</p>
+      <audio controls src="La Casa del Sol Naciente (The House Of The Rising Sun) - Jinsop.mp3" style="width: 100%;"></audio>
       <p><a href="#inicio">← Volver al inicio</a></p>
     </div>
   </div>

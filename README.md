@@ -82,21 +82,22 @@
     </div>
   </div>
 
-  <!-- VIDEO -->
+<!-- VIDEO -->
   <div id="video" class="pagina" hidden>
     <div class="encabezado">
       <h1>Video</h1>
     </div>
     <div class="detalle">
       <h2>Videos</h2>
-      <p>Aquí irán los videos.</p>
+      <p>Nombre del video</p>
+      <video controls src="video_randy.mp4" style="width: 100%; max-height: 450px;"></video>
       <p><a href="#inicio">← Volver al inicio</a></p>
     </div>
   </div>
-
+  
   <!-- PIE (se ve en todas las páginas) -->
   <div class="pie">
-    © 2026 Randy De Santis - Todos los derechos reservados
+    Comentarios y sugerencias al correo: randydavesdesantiscruz1996@gmail.com - © 2026 Randy De Santis - Todos los derechos reservados
   </div>
 
   <script>

@@ -37,12 +37,12 @@
     </div>
     <div class="contenido">
       <div class="principal">
-        <h2>Contenido Principal</h2>
-        <p>Datos principales</p>
+        <h2>Bienvenidos</h2>
+        <p>Hola, bienvenido a mi página biográfica</p>
       </div>
       <div class="lateral">
-        <h2>Contenido Lateral</h2>
-        <p>Noticias y enlaces adicionales</p>
+        <h2>Proyecto de Desarrollo de Plataformas Web</h2>
+        <p>Buenas noches</p>
       </div>
     </div>
   </div>
@@ -54,7 +54,8 @@
     </div>
     <div class="detalle">
       <h2>Randy De Santis</h2>
-      <p>Aquí va la biografía: lugar y fecha de nacimiento, trayectoria, logros y datos importantes.</p>
+      <p>Hola, me llamo Randy De Santis y tengo 29 años. Soy nacido en Guayaquil pero he vivido en Ventanas prácticamente toda mi vida y actualmente estudio en
+        el 3er Semestre de la carrera de Sistemas de Información de la Universidad Técnica de Babahoyo.</p>
       <p><a href="#inicio">← Volver al inicio</a></p>
     </div>
   </div>
@@ -66,7 +67,7 @@
     </div>
     <div class="detalle">
       <h2>Galería de fotos</h2>
-      <p>Aquí irán las fotografías.</p>
+      <p>randy.jpeg, randy1.jpeg</p>
       <p><a href="#inicio">← Volver al inicio</a></p>
     </div>
   </div>

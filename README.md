@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html5 lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -118,7 +118,7 @@
 
 </body>
 
-</html>
+</html5>
       </p>
     </div>
   </div>
